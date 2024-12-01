@@ -17,3 +17,7 @@ function insta() {
 function twitter() {
     alert("Nosso twitter é @nutrisabara_ofc");
 }
+
+function showLikeMessage() {
+    alert("Obrigado pelo seu feedback! Ficamos felizes que você gostou!");
+}

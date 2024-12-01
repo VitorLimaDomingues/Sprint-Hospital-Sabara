@@ -40,8 +40,43 @@ header nav ul a:hover {
     color: azure;
 }
 
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 30px;
+}
+.funcionalidade {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.funcionalidade h2 {
+    font-size: 1.8rem;
+    color: #004d40;
+    margin-bottom: 15px;
+}
+
+.funcionalidade p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.funcionalidade img {
+    max-width: 15px;
+}
+
 footer {
-    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%; 
