@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,18 +14,19 @@ header {
     height: 80px;
     background: #add8e6;
     justify-content: space-between;
-    align-items: center;   
+    align-items: center;
+    padding: 0 20px;
 }
 
 header h1 {
     margin-left: 10px;
+    font-size: 1.8rem;
 }
 
 header nav ul {
     display: flex;
     list-style: none;
     align-items: center;
-    padding: 1.7rem;
     gap: 0.7rem;
 }
 
@@ -52,6 +53,7 @@ main h1 {
     color: #000000;
     margin-bottom: 30px;
 }
+
 .funcionalidade {
     background-color: white;
     border-radius: 8px;
@@ -76,13 +78,79 @@ main h1 {
     max-width: 15px;
 }
 
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    header nav ul a {
+        font-size: 1.1rem;
+        margin: 5px 0;
+    }
+
+    main h1 {
+        font-size: 2rem;
+    }
+
+    .funcionalidade {
+        padding: 15px;
+    }
+
+    .funcionalidade h2 {
+        font-size: 1.6rem;
+    }
+
+    .funcionalidade p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    header nav ul a {
+        font-size: 1rem;
+    }
+
+    .funcionalidade {
+        padding: 10px;
+    }
+
+    .funcionalidade h2 {
+        font-size: 1.4rem;
+    }
+
+    .funcionalidade p {
+        font-size: 0.9rem;
+    }
+
+    main h1 {
+        font-size: 1.8rem;
+    }
+}
+
 footer {
     bottom: 0;
     left: 0;
-    width: 100%; 
+    width: 100%;
     background-color: #f8f9fa;
     color: #333;
     text-align: center;
     padding: 10px 0;
     border-top: 1px solid #ddd;
-  }
+}
