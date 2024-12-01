@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    background: url(/src/assets/background_hospital.jpg);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;   
+}
+
+.main {
+    width: 450px;
+    background: #6495ed;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form {
+    padding: 0 40px 30px;
+}
+
+.controle {
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.controle label {
+    display: inline-block;
+    font-weight: 900;
+}
+
+.controle input {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 60%;
+    height: 30px;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.controle.error i.error {
+    visibility: visible;
+}
+
+.controle.sucesso i.sucesso {
+    visibility: visible;
+}
+
+.controle.error small {
+    flex-direction: column;
+    margin-left: 4px;
+    font-size: 1rem;
+    color: #000;
+    visibility: visible;
+}
+
+.controle i {
+    position: absolute;
+    top: 4px;
+    right: -5px;
+    visibility: hidden;
+}
+
+.controle small {
+    flex-direction: column;
+    visibility: hidden;
+    position: absolute;
+    margin-top: 5px;
+    font-size: 5px;
+    color: #730a0a;
+}
+
+.form button {
+    width: 70%;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: #4682b4;
+    color: #fff;
+    margin-left: 40px;
+}
+
+.form button:hover {
+    background: #041944;
+    color: #fff;
+    box-shadow: 10px 10px 10px green;
+}
+
+@media screen and (max-width: 1366px) {
+    .main {
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        background-size: cover;
+    }
+}
