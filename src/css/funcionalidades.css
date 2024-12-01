@@ -40,21 +40,6 @@ header nav ul a:hover {
     color: azure;
 }
 
-main h2 {
-    display: grid;
-    margin-top: 20px;
-    justify-content: center;
-}
-
-main p {
-    width: 70%;
-    font-size: 150%;
-    text-align: center;
-    display: flex;
-    margin-left: 16%;
-    margin-top: 2%;
-}
-
 footer {
     position: fixed;
     bottom: 0;
@@ -66,23 +51,3 @@ footer {
     padding: 10px 0;
     border-top: 1px solid #ddd;
   }
-
-
-
-@media screen and (max-width: 768px) {
-    header {
-        height: auto;
-        padding: 10px;
-    }
-
-    header nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0;
-    }
-
-    header nav ul a {
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-    }
-}
