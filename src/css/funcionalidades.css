@@ -78,6 +78,17 @@ main h1 {
     max-width: 15px;
 }
 
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -144,13 +155,3 @@ main h1 {
     }
 }
 
-footer {
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #f8f9fa;
-    color: #333;
-    text-align: center;
-    padding: 10px 0;
-    border-top: 1px solid #ddd;
-}

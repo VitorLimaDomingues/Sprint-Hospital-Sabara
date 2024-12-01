@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,6 +6,7 @@
 
 body {
     background: #fff;
+    font-family: Arial, sans-serif;
 }
 
 header {
@@ -14,7 +15,8 @@ header {
     height: 80px;
     background: #add8e6;
     justify-content: space-between;
-    align-items: center;   
+    align-items: center;
+    padding: 0 20px;
 }
 
 header h1 {
@@ -25,7 +27,6 @@ header nav ul {
     display: flex;
     list-style: none;
     align-items: center;
-    padding: 1.7rem;
     gap: 0.7rem;
 }
 
@@ -43,12 +44,16 @@ header nav ul a:hover {
 main h1 {
     display: flex;
     justify-content: center;
+    font-size: 2rem;
+    margin: 30px 0;
 }
 
 main p {
     text-decoration: none;
     padding: 1%;
     font-size: 1.4rem;
+    text-align: center;
+    line-height: 1.6;
 }
 
 .slide {
@@ -74,6 +79,7 @@ main p {
     box-shadow: 0px 2px 5px #0000001a;
     transition: transform 0.2s;
     cursor: pointer;
+    margin: 10px;
 }
 
 .pagina img {
@@ -89,10 +95,114 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%; 
+    width: 100%;
     background-color: #f8f9fa;
     color: #333;
     text-align: center;
     padding: 10px 0;
     border-top: 1px solid #ddd;
-  }
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    header nav ul {
+        gap: 1rem;
+    }
+
+    header nav ul a {
+        font-size: 1.1rem;
+    }
+
+    main h1 {
+        font-size: 1.8rem;
+    }
+
+    .slide {
+        gap: 5%;
+    }
+
+    .pagina {
+        width: 120px;
+        height: 120px;
+    }
+
+    .pagina img {
+        width: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    header nav ul a {
+        font-size: 1rem;
+        margin: 5px 0;
+    }
+
+    main h1 {
+        font-size: 1.6rem;
+    }
+
+    .slide {
+        gap: 20px;
+    }
+
+    .pagina {
+        width: 100px;
+        height: 100px;
+    }
+
+    .pagina img {
+        width: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    header nav ul a {
+        font-size: 0.9rem;
+    }
+
+    main h1 {
+        font-size: 1.4rem;
+    }
+
+    .slide {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .pagina {
+        width: 90px;
+        height: 90px;
+    }
+
+    .pagina img {
+        width: 30px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
