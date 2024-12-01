@@ -205,4 +205,9 @@ footer {
         margin-top: 21%;
         height: auto;
     }
+
+    .secao3 img {
+        width: 60%;
+        margin-left: 60px;
+    }
 }
