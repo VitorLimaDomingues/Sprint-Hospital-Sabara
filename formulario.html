@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Chamando o CSS externo -->
+     <link rel="stylesheet" href="./src/css/formulario.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="main">
+
+        <header>
+            <h1>Preencha o formulário</h1>
+        </header>
+
+
+        <form class="form" id="form">
+            <div class="controle">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome">
+                <i class="sucesso"><img src="./src/assets/sucesso.svg" alt="Sucesso"></i>
+                <i class="error"><img src="./src/assets/error.svg" alt="Erro"></i>
+                <small>Error</small>
+            </div>
+
+            <div class="controle">
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+                <i class="sucesso"><img src="./src/assets/sucesso.svg" alt="Sucesso"></i>
+                <i class="error"><img src="./src/assets/error.svg" alt="Erro"></i>
+                <small>Error</small>
+            </div>
+
+            <div class="controle">
+                <label for="password">Senha:</label>
+                <input type="password" id="senha">
+                <i class="sucesso"><img src="./src/assets/sucesso.svg" alt="Sucesso"></i>
+                <i class="error"><img src="./src/assets/error.svg" alt="Erro"></i>
+                <small>Error</small>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+
+        </form>
+    </div>
+
+    <!-- Chamando o JavaScript externo -->
+     <script src="./src/js/formulario.js"></script>
+</body>
+</html>

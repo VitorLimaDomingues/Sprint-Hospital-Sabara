@@ -40,6 +40,12 @@ header nav ul a:hover {
     color: azure;
 }
 
+main {
+    display: grid;
+    width: 100%;
+    height: auto;
+}
+
 main h2 {
     display: grid;
     margin-top: 20px;
@@ -55,8 +61,112 @@ main p {
     margin-top: 2%;
 }
 
+
 footer {
     position: fixed;
+.subtitulo {
+    margin-top: 5%;
+    font-size: 150%;
+}
+
+.barra {
+    display: grid;
+    margin-left: 15%;
+    margin-top: 1%;
+    width: 70%;
+}
+
+.secao1 {
+    display: flex;
+    background: #e6e6fa;
+    border: #000;
+    border-radius: 10px;
+    margin: 40px;
+    padding: 10px
+}
+
+.secao1 span {
+    width: 150%;
+    margin-top: 12%;
+    margin-left: 0.5%;
+    font-size: 200%;
+}
+
+.secao1 img {
+    display: flex;
+    width: 40%;
+    border: #fafad2 solid;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+}
+
+.secao2 {
+    display: flex;
+    align-items: flex-start;
+    background: #e6e6fa;
+    border-radius: 10px;
+    margin: 40px;
+    padding: 40px;
+    justify-content: end;
+}
+
+.secao2 img {
+    width: 40%;
+    border: #fafad2 solid;
+    border-radius: 10px;
+    margin-right: 1%;
+    object-fit: cover;
+}
+
+.secao2 span {
+    width: 60%;
+    font-size: 200%;
+    margin-left: 1%;
+    text-align: left;
+    margin-top: 8%;
+}
+
+.secao3 {
+    display: grid;
+    align-items: center;
+    background: #e6e6fa;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 40px;
+    padding: 40px;
+}
+
+.secao3 img {
+    width: 40%;
+    border: #fafad2 solid;
+    border-radius: 10px;
+    margin-left: 30%;
+}
+
+.secao3 span {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1%;
+    font-size: 150%;
+}
+
+@media screen and (max-width: 1366px) {
+    .secao1 span {
+        font-size: 150%;
+        margin-bottom: 8%;
+    }
+
+    .secao2 span {
+        font-size: 140%;
+        margin-right: 5px;
+    }
+}
+
+footer {
+
     bottom: 0;
     left: 0;
     width: 100%; 
@@ -67,12 +177,15 @@ footer {
     border-top: 1px solid #ddd;
   }
 
-
-
-@media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     header {
         height: auto;
         padding: 10px;
+    }
+
+    main h2 {
+        margin-left: ;
+        text-align: center;
     }
 
     header nav ul {
@@ -84,5 +197,25 @@ footer {
     header nav ul a {
         font-size: 1.5rem;
         margin-bottom: 10px;
+    }
+
+    .secao1 span {
+        font-size: 100%;
+        margin-bottom: 8%;
+    }
+
+    .secao2 span {
+        font-size: 100%;
+    }
+
+    .secao2 img {
+        width: 40%;
+        margin-top: 21%;
+        height: auto;
+    }
+
+    .secao3 img {
+        width: 60%;
+        margin-left: 60px;
     }
 }
