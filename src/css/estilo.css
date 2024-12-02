@@ -61,6 +61,9 @@ main p {
     margin-top: 2%;
 }
 
+
+footer {
+    position: fixed;
 .subtitulo {
     margin-top: 5%;
     font-size: 150%;
@@ -163,6 +166,7 @@ main p {
 }
 
 footer {
+
     bottom: 0;
     left: 0;
     width: 100%; 
@@ -173,8 +177,7 @@ footer {
     border-top: 1px solid #ddd;
   }
 
-
-@media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     header {
         height: auto;
         padding: 10px;
