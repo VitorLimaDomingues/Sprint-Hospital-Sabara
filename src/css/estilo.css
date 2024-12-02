@@ -64,7 +64,6 @@ main p {
 
 footer {
     position: fixed;
-.subtitulo {
     margin-top: 5%;
     font-size: 150%;
 }
@@ -166,7 +165,6 @@ footer {
 }
 
 footer {
-
     bottom: 0;
     left: 0;
     width: 100%; 
