@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background: #add8e6;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin-left: 10px;
+    font-size: 1.8rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+header nav ul a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+header nav ul a:hover {
+    text-decoration: underline;
+    color: azure;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.funcionalidade {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.funcionalidade h2 {
+    font-size: 1.8rem;
+    color: #004d40;
+    margin-bottom: 15px;
+}
+
+.funcionalidade p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.funcionalidade img {
+    max-width: 15px;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    header nav ul a {
+        font-size: 1.1rem;
+        margin: 5px 0;
+    }
+
+    main h1 {
+        font-size: 2rem;
+    }
+
+    .funcionalidade {
+        padding: 15px;
+    }
+
+    .funcionalidade h2 {
+        font-size: 1.6rem;
+    }
+
+    .funcionalidade p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    header nav ul a {
+        font-size: 1rem;
+    }
+
+    .funcionalidade {
+        padding: 10px;
+    }
+
+    .funcionalidade h2 {
+        font-size: 1.4rem;
+    }
+
+    .funcionalidade p {
+        font-size: 0.9rem;
+    }
+
+    main h1 {
+        font-size: 1.8rem;
+    }
+}
+
